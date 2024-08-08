@@ -1,0 +1,389 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+/*Estilos Header*/
+
+header {
+    padding: 60px;
+    background-image: url(../img/fondo\(opcional1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(255, 217, 0),rgba(234, 191, 63, 0.612));
+    color: black;
+
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+    }
+}
+
+/*Estilos Nav*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 156, 189, 0.881);
+    position: sticky;
+    top: 0;
+    border-style: inset outset;
+    border-width: 5px;
+    border-color: black;
+}
+
+@media (max-width: 800px){
+    img {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+.navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: grey;
+    font-size: 30px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a {
+        text-align: center;
+    }
+}
+
+/* Estilo Principal */
+
+.principal {
+    display: flex;
+}
+
+aside {
+    flex-basis: 25%;
+    padding: 20px;
+    background-color: beige;
+    text-align: center;
+    
+}
+
+main {
+    flex-basis: 75%;
+    padding: 20px;
+    padding-left: 40px;
+    background-color: gray;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 800px) {
+    .principal {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+main img {
+    width: 95%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+main h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    background-image: linear-gradient(rgb(255, 217, 0),rgba(234, 191, 63, 0.612));
+    text-decoration: underline;
+}
+
+main .campeon {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    background-image: linear-gradient(rgb(9, 56, 5),rgb(63, 234, 74));
+    text-decoration: underline;
+}
+
+main .descontaron {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    background-image: linear-gradient(rgb(15, 13, 1),rgba(23, 18, 2, 0.612));
+    text-decoration: underline;
+}
+
+main .libertadores {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    background-image: linear-gradient(rgba(31, 243, 70, 0.7),rgba(6, 94, 100, 0.612));
+    text-decoration: underline;
+}
+
+main .sudamericana {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    background-image: linear-gradient(rgb(232, 199, 17),rgba(143, 119, 47, 0.612));
+    text-decoration: underline;
+}
+
+main .desciende {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    background-image: linear-gradient(rgb(255, 0, 0),rgba(241, 26, 26, 0.612));
+    text-decoration: underline;
+}
+
+main .link {
+    padding: 10px;
+    background-color: rgba(27, 156, 189, 0.881);;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    margin-top: 20px;
+}
+
+.image1 img {
+    width: 100%;
+    margin-top: 70px;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.image img:hover, .image1 img:hover {
+    transform: scale(1.04);
+}
+
+
+.asidetitle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px dotted;
+    background-image: linear-gradient(rgb(255, 217, 0),rgba(234, 191, 63, 0.612));
+    text-decoration: underline;
+}
+
+
+@media (max-width: 800px) {
+    .image img, .image1 img{
+        width: 60%;
+        height: auto;
+    }
+}
+
+/* Estilo Footer */
+
+footer {
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    background-color: black;
+    color: #f1faee;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social img {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social img:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media (max-width: 800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/* Estilo de Registro */
+
+form {
+    padding: 40px;
+    background-color: gray;
+    border: 5px outset gold;
+    text-align: center;
+    height: 100vh;
+    color: black;
+}
+
+label {
+    background-color: gold;
+    color: black;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    border: 10px solid gold;
+}
+
+input {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+label, input, select {
+    width: 50%;
+    font-size: large;
+    border-radius: 10px;
+}
+
+input[type="reset"]:hover {
+    background-color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+@media (max-width: 800px) {
+    form {
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Estilo Carrusel */
+
+#carouselExample img {
+    width: 100%;
+    height: 65vh;
+}
+
+#carouselExample {
+    margin-top: 2%;
+}
+
+@media (max-width: 800px) {
+    #carouselExample img {
+        height: 30vh;
+    }
+}
+
+#carouselExampleIndicators img {
+    width: 100%;
+    height: 65vh;
+}
+
+#carouselExampleIndicators {
+    margin-top: 2%;
+}
+
+@media (max-width: 800px) {
+    #carouselExampleIndicators {
+        height: 30vh;
+    }
+}
